@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revised Piano Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="requestlessons.html">Request Lessons</a></li>
+        <li><a href="purchaseitems.html">Purchase Items</a></li>
+        <li><a href="watchvideos.html">Watch Videos</a></li>
+        <li><a href="readarticles.html">Read Articles</a></li>
+    </ul>
+
+    <div class="main-content">
+        <div class="title-box">
+            <h1>Request Lessons</h1>
+        </div>
+    </div>
+    
+    <div class="description-box" style="max-width:900px; margin:24px auto;">
+    <form id="lesson-form">
+            <h2>Student info</h2>
+            <label for="fname">First name</label><br>
+            <input id="fname" name="fname" type="text" placeholder="First name"><br>
+            <label for="lname">Last name</label><br>
+            <input id="lname" name="lname" type="text" placeholder="Last name"><br>
+            <label for="age">Age</label><br>
+            <input id="age" name="age" type="number" min="4" max="120" placeholder="Age"><br><br>
+
+            <hr>
+            <h3>Lesson topics</h3>
+            <label><input type="checkbox" id="beginner"> Beginner / Basics</label><br>
+            <label><input type="checkbox" id="technique"> Technique / Posture</label><br>
+            <label><input type="checkbox" id="theory"> Music theory</label>
+            <p id="trivia1-answer" style="color:black; margin-top:8px;"></p>
+
+            <hr>
+            <h3>Preferred time</h3>
+            <label><input type="radio" name="time" id="morning"> Morning</label><br>
+            <label><input type="radio" name="time" id="afternoon"> Afternoon</label><br>
+            <label><input type="radio" name="time" id="evening"> Evening</label>
+            <p id="trivia2-answer" style="color:black; margin-top:8px;"></p>
+
+            <hr>
+            <h3>Click all that apply to you</h3>
+            <label><input type="checkbox" id="canRead"> I can read music</label><br>
+            <label><input type="checkbox" id="playsByEar"> I can play by ear</label><br>
+            <label><input type="checkbox" id="hasKeyboard"> I have a keyboard at home</label>
+            <p id="trivia3-answer" style="color:black; margin-top:8px;"></p>
+            <br><br>
+            <button type="submit" onclick="submitForm()">Submit request</button>
+        </form>
+    </div>
+
+    <p id="submit-msg" style="color:black; margin-top:12px;"></p>
+
+
+
+    <script src="js/forms.js"></script>
+</body>
+</html> 
